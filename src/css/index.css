@@ -1,0 +1,17 @@
+html, body, #app-prioriti, [data-reactroot] {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+[data-reactroot] {
+  padding-top: 64px;
+}
