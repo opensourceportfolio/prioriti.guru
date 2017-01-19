@@ -10,9 +10,10 @@ const App = () =>
   <Router history={browserHistory}>
     <Route path="/" component={ShellPage}>
       <IndexRoute component={AllPage} />
-      <Route path="edit" component={EditPage}/>
-      <Route path="view" component={ViewPage}/>
-      <Route path="*" component={AllPage}/>
+      <Route path="edit" component={EditPage} />
+      <Route path="edit/:id" component={EditPage} />
+      <Route path="view/:type" component={ViewPage} />
+      <Route path="*" component={AllPage} />
     </Route>
   </Router>;
 

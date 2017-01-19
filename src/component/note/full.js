@@ -12,7 +12,7 @@ const mapDispatchToProps = {  };
 const FullNote = () => {
   return (
     <NoteRow rowStyle={{flex: 1}}>
-      <Note />
+      <Note type="4" />
     </NoteRow>
   );
 };

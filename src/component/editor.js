@@ -39,13 +39,13 @@ const Editor = ({ todo, toggle, create, changeText }) => {
         <Toggle
           label="Important"
           style={rowStyle}
-          defaultToggled={todo.important}
-          onToggle={() => toggle('important', !todo.important)} />
+          defaultToggled={todo.isImportant}
+          onToggle={() => toggle('isImportant', !todo.isImportant)} />
         <Toggle
           label="Easy"
           style={rowStyle}
-          defaultToggled={todo.easy}
-          onToggle={() => toggle('easy', !todo.easy)} />
+          defaultToggled={todo.isEasy}
+          onToggle={() => toggle('isEasy', !todo.isEasy)} />
       </div>
       <div style={buttonStyle}>
         <RaisedButton label="Save" primary={true} onClick={() => create(todo)} />

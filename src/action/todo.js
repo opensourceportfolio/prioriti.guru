@@ -6,3 +6,22 @@ export function loadData(state) {
     state,
   };
 }
+
+export const TODO_CHANGE_COMPLETE = 'TODO_CHANGE_COMPLETE';
+
+export function toggleCompleted(id, isCompleted) {
+  return {
+    type: TODO_CHANGE_COMPLETE,
+    id,
+    isCompleted,
+  };
+}
+
+export const TODO_DELETE = 'TODO_DELETE';
+
+export function deleteTodo(id) {
+  return {
+    type: TODO_DELETE,
+    id,
+  };
+}

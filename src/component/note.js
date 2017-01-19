@@ -2,9 +2,12 @@ import React from 'lib/react';
 import { Link } from 'lib/react-router';
 import { connect } from 'lib/react-redux';
 import {Card} from 'material-ui/Card';
+import { getTodos } from 'reducer';
 
-const mapStateToProps = () => {
-  return {};
+const mapStateToProps = (state, ownProps) => {
+  return {
+    todos: getTodos(ownProps.type, state)
+  };
 };
 
 const mapDispatchToProps = {  };
@@ -19,14 +22,13 @@ const cardStyle = {
   height: '100%',
 };
 
-const Note = (props) => {
-  const extendedStyles = Object.assign({}, noteStyle, props.style);
+const Note = ({ style, type, todos }) => {
+  const extendedStyles = Object.assign({}, noteStyle, style);
 
   return (
       <div style={extendedStyles}>
-        <Link to="view">
-          <Card style={cardStyle}>
-          </Card>
+        <Link to={`/view/${type}`}>
+          <Card style={cardStyle} />
         </Link>
       </div>
   );

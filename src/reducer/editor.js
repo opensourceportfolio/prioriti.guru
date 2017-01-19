@@ -2,8 +2,8 @@ import { TODO_CREATE, TODO_CHANGE_TEXT, TODO_CHANGE_TOGGLE } from 'action/editor
 
 const emptyState = {
   text: '',
-  important: false,
-  easy: false,
+  isImportant: false,
+  isEasy: false,
 };
 
 export function editor(state = emptyState, action) {

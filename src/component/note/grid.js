@@ -12,10 +12,10 @@ const mapDispatchToProps = {  };
 const GridNote = () => {
   return (
     <NoteRow rowStyle={{flex: 2}}>
-      <Note style={{width: '50%', height: '50%'}} />
-      <Note style={{width: '50%', height: '50%'}} />
-      <Note style={{width: '50%', height: '50%'}} />
-      <Note style={{width: '50%', height: '50%'}} />
+      <Note type="3" style={{width: '50%', height: '50%'}} />
+      <Note type="2" style={{width: '50%', height: '50%'}} />
+      <Note type="1" style={{width: '50%', height: '50%'}} />
+      <Note type="0" style={{width: '50%', height: '50%'}} />
     </NoteRow>
   );
 };

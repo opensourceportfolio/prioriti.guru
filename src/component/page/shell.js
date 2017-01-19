@@ -7,7 +7,8 @@ import NavigationClose from 'material-ui/svg-icons/navigation/arrow-back';
 import { toggleDrawer } from 'action/navigation';
 
 const mapStateToProps = () => {
-  return {};
+  return {
+  };
 };
 
 const mapDispatchToProps = { toggleDrawer };
